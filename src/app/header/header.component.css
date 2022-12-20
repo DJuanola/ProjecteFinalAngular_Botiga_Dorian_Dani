@@ -1,0 +1,11 @@
+header {
+  height:30%;
+  width:100%;
+  border: 1px solid ;
+  border-color: darkgreen;
+  background-color: goldenrod;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo{height:150px}
