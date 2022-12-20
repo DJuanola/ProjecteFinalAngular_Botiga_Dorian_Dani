@@ -1,0 +1,13 @@
+body{
+  background-color: green;
+}
+
+article {
+  border: 1px solid black;
+  height: auto;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  background-color: white;
+  padding: 1em;
+}

@@ -1,0 +1,30 @@
+body{
+  background-color: green;
+}
+
+.caixa{
+  background: white;
+  width: 320px;
+  height: 320px;
+  align-content: space-between;
+  margin: 35px;
+}
+
+.imatge{
+  display: inline-flex;
+  height: 38%;
+  width: auto;
+  justify-content: center;
+  margin:8% ;
+  text-align: center;
+  font-size: larger;
+}
+
+article {
+  border: 1px darkred;
+  height: 70%; width: 70%;
+  background-color: brown;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}

@@ -1,0 +1,41 @@
+body{
+  background-color: green;
+}
+
+article {
+  text-align: right;
+  background-color: white;
+  border: 1px solid black;
+  height: auto;
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+form {display: table;}
+
+.form-register {
+  width: 400px;
+  padding: 30px;
+  font-family: 'calibri';
+  color: #000000;
+}
+
+.camp, #submit_button, #resetbutton{
+  display: table-cell;
+  height: 25px;
+  margin: 1px;
+}
+
+.controls {
+  width: 50%;
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: #000000;
+}

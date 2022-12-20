@@ -1,0 +1,52 @@
+.imatge {
+  display: inline-flex;
+  height: 55%;
+  width: 85%;
+  justify-content: center;
+  margin: 1em;
+  text-align: center;
+  font-size: larger;
+}
+body{
+  background-color: green;
+}
+
+#right_aside{
+  color: #f2f2f2;
+  border: 3px solid ;
+  border-color: darkred;
+  height: 70%;
+  width: 20%;
+  margin-left: 2px;
+  float: right;
+  display: inline-block;
+  background-color: brown;
+  text-align: center;
+  font-style: italic;
+}
+
+#left_aside{
+  color: #f2f2f2;
+  border: 3px solid ;
+  border-color: darkred;
+  height: 70%;
+  width: 20%;
+  margin-right: 2px;
+  float: left;
+  display: inline-block;
+  background-color: brown;
+  text-align: center;
+  font-style: italic;
+}
+
+article {
+  color: #f2f2f2;
+  border: 3px solid;
+  border-color: darkred;
+  height: 70%; width: 57%;
+  background-color: brown;
+  display: inline-block;
+  margin-left:8px;
+  text-align: center;
+  font-style: italic;
+}

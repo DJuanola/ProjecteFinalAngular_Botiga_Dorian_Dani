@@ -1,0 +1,39 @@
+body{
+  background-color: green;
+}
+
+article {
+  border: 1px darkred;
+  background-color: brown;
+  height: 70%; width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.imatge{
+  display: inline-flex;
+  height: 80%;
+  width: auto;
+  justify-content: center;
+  text-align: center;
+  font-size: larger;
+  margin-top: 8%;
+}
+
+.imatge img {
+  height: 60%;
+  width: auto;
+}
+
+.imatge h3{
+  color: green;
+}
+
+.caixa{
+  width: 300px;
+  height: 300px;
+  margin: 8%;
+  display: inline;
+  flex-direction: row;
+  align-content: center;
+}
