@@ -1,21 +1,16 @@
 .imatge {
   display: inline-flex;
-  height: 55%;
+  height: auto;
   width: 85%;
   justify-content: center;
   margin: 1em;
   text-align: center;
   font-size: larger;
 }
-body{
-  background-color: green;
-}
-
 #right_aside{
   color: #f2f2f2;
-  border: 3px solid ;
-  border-color: darkred;
-  height: 70%;
+  border: 3px solid darkred;
+  height: 30em;
   width: 20%;
   margin-left: 2px;
   float: right;
@@ -27,9 +22,8 @@ body{
 
 #left_aside{
   color: #f2f2f2;
-  border: 3px solid ;
-  border-color: darkred;
-  height: 70%;
+  border: 3px solid darkred;
+  height: 30em;
   width: 20%;
   margin-right: 2px;
   float: left;
@@ -41,9 +35,8 @@ body{
 
 article {
   color: #f2f2f2;
-  border: 3px solid;
-  border-color: darkred;
-  height: 70%; width: 57%;
+  border: 3px solid darkred;
+  height: 30em; width: 57%;
   background-color: brown;
   display: inline-block;
   margin-left:8px;
