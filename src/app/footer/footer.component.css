@@ -1,13 +1,16 @@
-#footer_lletres{color: white}
+#footer_lletres{
+  color: white
+}
 footer {
   border: 1px solid darkred;
   background-color: brown;
   height: 30%;
   width: auto;
   display: block;
-  margin-top: 1%;
+  margin: auto;
   text-align: center;
 }
+
 .Facebook {
   height: 50px;
   margin: 0.5em;

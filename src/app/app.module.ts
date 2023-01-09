@@ -11,6 +11,7 @@ import {RegistreClientComponent} from "./registre-client/registre-client.compone
 import {CistellaComponent} from "./cistella/cistella.component";
 import {CondicionsComponent} from "./condicions/condicions.component";
 import {ContacteComponent} from "./contacte/contacte.component";
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import {ContacteComponent} from "./contacte/contacte.component";
     ContacteComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
