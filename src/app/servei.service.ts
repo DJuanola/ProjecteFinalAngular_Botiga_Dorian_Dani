@@ -9,9 +9,11 @@ export class ServeiService {
 
   addToCistella(producte: producte) {
     this.items.push(producte);
+    console.log("PUSH" + this.items)
   }
 
   getItems() {
+    console.log("GET" + this.items)
     return this.items;
   }
 

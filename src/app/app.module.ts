@@ -13,6 +13,7 @@ import {CondicionsComponent} from "./condicions/condicions.component";
 import {ContacteComponent} from "./contacte/contacte.component";
 import { AppRoutingModule } from './app-routing.module';
 import { IniciarSessioComponent } from './iniciar-sessio/iniciar-sessio.component';
+import { FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -26,8 +27,7 @@ import { IniciarSessioComponent } from './iniciar-sessio/iniciar-sessio.componen
     RegistreClientComponent,
     CistellaComponent,
     CondicionsComponent,
-    ContacteComponent,
-    IniciarSessioComponent
+    ContacteComponent
   ],
   imports: [
     BrowserModule,
