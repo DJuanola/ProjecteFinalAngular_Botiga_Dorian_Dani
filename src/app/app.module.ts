@@ -12,6 +12,7 @@ import {CistellaComponent} from "./cistella/cistella.component";
 import {CondicionsComponent} from "./condicions/condicions.component";
 import {ContacteComponent} from "./contacte/contacte.component";
 import { AppRoutingModule } from './app-routing.module';
+import { IniciarSessioComponent } from './iniciar-sessio/iniciar-sessio.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { AppRoutingModule } from './app-routing.module';
     RegistreClientComponent,
     CistellaComponent,
     CondicionsComponent,
-    ContacteComponent
+    ContacteComponent,
+    IniciarSessioComponent
   ],
   imports: [
     BrowserModule,
