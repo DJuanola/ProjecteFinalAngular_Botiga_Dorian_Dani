@@ -1,5 +1,3 @@
-
-
 .caixa{
   background: white;
   width: 320px;
@@ -13,7 +11,7 @@
   height: 38%;
   width: auto;
   justify-content: center;
-  margin:8% ;
+  margin: 8%;
   text-align: center;
   font-size: larger;
 }

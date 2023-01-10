@@ -5,23 +5,23 @@ body{
 article {
   border: 1px darkred;
   background-color: brown;
-  height: 70%; width: 100%;
+  height: 70%;
+  width: 100%;
   display: block;
-  margin: 0 auto;
 }
 
 .imatge{
-  display: inline-flex;
-  height: 80%;
-  width: auto;
+  height: 40%;
+  width: 16%;
   justify-content: center;
+  align-items: center;
   text-align: center;
   font-size: larger;
-  margin-top: 8%;
+  margin-top: 10%;
 }
 
 .imatge img {
-  height: 60%;
+  height: 140px;
   width: auto;
 }
 
@@ -30,10 +30,12 @@ article {
 }
 
 .caixa{
-  width: 300px;
+  background: white;
+  width: 250px;
   height: 300px;
-  margin: 8%;
-  display: inline;
+  margin: 20px;
+  text-align: center;
   flex-direction: row;
-  align-content: center;
+  display: inline-block;
 }
+
