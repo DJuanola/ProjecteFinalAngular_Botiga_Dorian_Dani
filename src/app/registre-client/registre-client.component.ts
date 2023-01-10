@@ -23,8 +23,8 @@ export class RegistreClientComponent implements OnInit {
       // @ts-ignore
       password = document.getElementById("contrasenya").value
 
-      localStorage.setItem("nomUsuari", username)
-      localStorage.setItem("contrasenyaUsuari", password)
+      sessionStorage.setItem("nomUsuari", username)
+      sessionStorage.setItem("contrasenyaUsuari", password)
       // @ts-ignore
       usernamefield.form.reset()
     }
