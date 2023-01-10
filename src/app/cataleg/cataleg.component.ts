@@ -11,7 +11,7 @@ import {ServeiService} from '../servei.service'
 export class CatalegComponent {
   items = items;
 
-  constructor(private serveiService: ServeiService) {
+  constructor(private  serveiService: ServeiService) {
   }
   addToCistella(producte: producte) {
     this.serveiService.addToCistella(producte);

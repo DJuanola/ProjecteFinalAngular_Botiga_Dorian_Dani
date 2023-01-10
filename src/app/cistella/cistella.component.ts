@@ -18,7 +18,7 @@ export class CistellaComponent {
     console.warn("La teva comanda s'ha anat cap a la cistella", this.checkoutForm.value);
     this.checkoutForm.reset();
   }
-  delete(index: number) {
+  delete (index: number) {
     this.cistService.removeItem(index);
   }
 

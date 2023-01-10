@@ -2,7 +2,7 @@ export interface producte {
   qty: any;
   name: string;
   preu: number;
-  quantitat: number;
+  quantitat:  number;
 }
 
 export const items =[

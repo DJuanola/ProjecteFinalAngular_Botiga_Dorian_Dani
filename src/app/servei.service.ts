@@ -12,7 +12,7 @@ export class ServeiService {
   }
 
   getItems() {
-    return this.items;
+     return this.items;
   }
 
   clearItems() {
