@@ -22,7 +22,7 @@ export class ServeiService {
   }
 
   removeItem(index: any) {
-    this.items.splice(index, 1);
+    this.items.splice (index, 1);
   }
 
   setCartData(data: any) {
