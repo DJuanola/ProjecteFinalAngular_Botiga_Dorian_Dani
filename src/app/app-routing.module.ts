@@ -13,7 +13,8 @@ const routes: Routes=[
   {path: 'mainPage', component: MenuComponent},
   {path: 'condicions', component: CondicionsComponent},
   {path: 'registre', component: RegistreClientComponent},
-  {path: 'contacte', component: ContacteComponent}
+  {path: 'contacte', component: ContacteComponent},
+  {path: '**', redirectTo: 'mainPage'},
 ]
 
 
