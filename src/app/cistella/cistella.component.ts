@@ -12,6 +12,7 @@ export class CistellaComponent {
   checkoutForm = this.forma.group({});
   constructor(private cistService: ServeiService,
               private forma: FormBuilder) {
+    console.log(this.begudes)
   }
   onSubmit(): void {
     this.begudes = this.cistService.clearItems();

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { IndexPaginaComponent } from './index-pagina/index-pagina.component';
@@ -12,6 +11,8 @@ import {CistellaComponent} from "./cistella/cistella.component";
 import {CondicionsComponent} from "./condicions/condicions.component";
 import {ContacteComponent} from "./contacte/contacte.component";
 import { AppRoutingModule } from './app-routing.module';
+import { IniciarSessioComponent } from './iniciar-sessio/iniciar-sessio.component';
+import { FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { AppRoutingModule } from './app-routing.module';
     RegistreClientComponent,
     CistellaComponent,
     CondicionsComponent,
-    ContacteComponent
+    ContacteComponent,
+    IniciarSessioComponent
   ],
   imports: [
     BrowserModule,

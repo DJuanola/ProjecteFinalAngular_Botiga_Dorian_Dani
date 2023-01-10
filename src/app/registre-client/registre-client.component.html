@@ -2,20 +2,20 @@
 <article>
   <form class="form-register">
     <h1>Registra't a la nostra botiga de licors</h1>
-    <label for="nom">Nom: </label>
-    <input class="controls" type="text" name="nom" id="nom" placeholder="" required>
+    <label for="username">Nom d'usuari: </label>
+    <input class="controls" type="text" name="nom" id="username" placeholder="" required>
     <br>
-    <label for="cognoms">Cognoms: </label>
+    <label for="cognoms">Nom i cognoms: </label>
     <input class="controls" type="text" name="cognoms" id="cognoms" placeholder="" required>
     <br>
     <label for="telèfon">Telèfon de contacte: </label>
-    <input class="controls" type="text" name="telèfon" id="telèfon" placeholder="" required>
+    <input class="controls" type="tel" name="telèfon" id="telèfon" placeholder="" required>
     <br>
     <label for="correu">Correu electrònic: </label>
-    <input class="controls" type="text" name="correu" id="correu" placeholder="" required>
+    <input class="controls" type="email" name="correu" id="correu" placeholder="" required>
     <br>
     <label for="contrasenya">Contrasenya: </label>
-    <input class="controls" type="text" name="contrasenya" id="contrasenya" placeholder="" required>
+    <input class="controls" type="password" name="contrasenya" id="contrasenya" placeholder="" required>
     <br>
     Data de naixement:
     <select name="Dia" id="dia">
@@ -88,12 +88,10 @@
       <option value="1993">1993</option>
     </select>
     <br>
+    <br>
     <label for="dirrecio">Direcció: </label>
     <input class="controls" type="text" name="direccio" id="dirrecio" placeholder="" required>
     <br>
-    <br>
-    <label for="direcio">Direcció: </label>
-    <input class="controls" type="text" name="direccio" id="direcio" placeholder="" required>
     <br>
     <section id="venta">
       <h3> Tipus de comprador:</h3>
@@ -104,8 +102,9 @@
     </section>
     <br>
     <br>
-    <p>Estic d'acord amb els<a href="condicions.html" > Terminis i Condicions</a> </p>
-    <button type="submit" value="Registra't">Registra't</button>
+    <p>Estic d'acord amb els <a routerLink="/condicions" routerLinkActive="active" >Terminis i Condicions</a> </p>
+    <p>Ja tens un compte? <a routerLink="/iniciaSessio" routerLinkActive="active">Inicia sessió</a> </p>
+    <button id="registre" type="button" value="Registrat" >Registra't</button>
     <input type="reset" value="Tornar a fer el registre" id="">
   </form>
 </article>

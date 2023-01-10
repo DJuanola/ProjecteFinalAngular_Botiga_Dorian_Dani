@@ -6,6 +6,8 @@ import { CatalegComponent} from "./cataleg/cataleg.component";
 import { RegistreClientComponent} from "./registre-client/registre-client.component";
 import { ContacteComponent} from "./contacte/contacte.component";
 import { MenuComponent} from "./menu/menu.component";
+import { IniciarSessioComponent} from "./iniciar-sessio/iniciar-sessio.component";
+import * as path from "path";
 
 const routes: Routes=[
   {path: 'cistella', component: CistellaComponent},
@@ -14,6 +16,7 @@ const routes: Routes=[
   {path: 'condicions', component: CondicionsComponent},
   {path: 'registre', component: RegistreClientComponent},
   {path: 'contacte', component: ContacteComponent},
+  {path: 'iniciaSessio', component:IniciarSessioComponent},
   {path: '**', redirectTo: 'mainPage'},
 ]
 
