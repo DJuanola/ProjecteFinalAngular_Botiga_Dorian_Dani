@@ -21,8 +21,8 @@ ngOnInit() {
     // @ts-ignore
     let contrasenyaUsuari = password.value
 
-    let checkUsuari = localStorage.getItem("nomUsuari")
-    let checkContrasenya = localStorage.getItem("contrasenyaUsuari")
+    let checkUsuari = sessionStorage.getItem("nomUsuari")
+    let checkContrasenya = sessionStorage.getItem("contrasenyaUsuari")
 
     if ((nomUsuari == checkUsuari) && (contrasenyaUsuari == checkContrasenya)) {
       alert("Sessió iniciada")
@@ -35,5 +35,12 @@ ngOnInit() {
       alert("error a l'iniciar sessió")
     }
   }
+  let logoutonclick= document.getElementById("logout")
+  // @ts-ignore
+  logoutonclick.onclick= function tancarsessio(){
+    window.localStorage.clear()
+    alert("Sessió tancada")
+  }
+
 }
 }
