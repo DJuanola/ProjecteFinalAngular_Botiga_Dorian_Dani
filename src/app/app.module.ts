@@ -26,6 +26,7 @@ import { FormsModule, ReactiveFormsModule} from "@angular/forms";
     CatalegComponent,
     RegistreClientComponent,
     CistellaComponent,
+    IniciarSessioComponent,
     CondicionsComponent,
     ContacteComponent
   ],

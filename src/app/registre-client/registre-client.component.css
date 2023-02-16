@@ -42,8 +42,6 @@ aside{
   border: 1px solid black;
   height: auto;
   width: 40%;
-  display: inline-flex;
   margin: 0 auto;
-  margin-left: 5%;
   padding: 1em;
 }
