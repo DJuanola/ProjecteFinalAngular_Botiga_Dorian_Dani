@@ -1,11 +1,19 @@
 import {Component, OnInit} from '@angular/core';
-
+import {HttpClient} from "@angular/common/http";
 @Component({
   selector: 'app-iniciar-sessio',
   templateUrl: './iniciar-sessio.component.html',
   styleUrls: ['./iniciar-sessio.component.css']
 })
 export class IniciarSessioComponent  implements OnInit {
+
+
+constructor(private http: HttpClient) {
+
+  this.http.get<any>("http://localhost:3080/api/iniciar-sessio").forEach((client) =>
+    console.log(client)
+  )
+}
 ngOnInit() {
 
 

@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'app-registre-client',
@@ -7,8 +8,12 @@ import {Component, OnInit} from '@angular/core';
 })
 export class RegistreClientComponent implements OnInit {
 
-  constructor() {
-  }
+ /* constructor(private http: HttpClient) {
+
+    this.http.get<any>("http://localhost:3080/api/registre").forEach((client) =>
+      console.log(client)
+    )
+  }*/
 
   ngOnInit() {
     let registreVar = document.getElementById("registre")

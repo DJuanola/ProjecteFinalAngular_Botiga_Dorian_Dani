@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ProjecteFinalAngular_Botiga_Dorian_Dani';
+
+
 }
