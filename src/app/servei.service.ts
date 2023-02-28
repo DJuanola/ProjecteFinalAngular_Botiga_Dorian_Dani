@@ -31,3 +31,6 @@ export class ServeiService {
     localStorage.setItem('cart', JSON.stringify(data))
   }
 }
+
+
+

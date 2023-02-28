@@ -1,20 +1,52 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
+import {Router} from "express";
+import {UsuarisService} from "../usuaris.service";
+import {AngularFireAuth} from "@angular/fire/compat/auth";
+
 @Component({
   selector: 'app-iniciar-sessio',
   templateUrl: './iniciar-sessio.component.html',
   styleUrls: ['./iniciar-sessio.component.css']
 })
-export class IniciarSessioComponent  implements OnInit {
+export class IniciarSessioComponent  /*implements OnInit*/ {
+mail:any;
+password:any;
+  [x: string]: any;
+
+  correuTrobat: any;
+
+  constructor(public router:Router, private usuariServei: UsuarisService, public firebaseAuth: AngularFireAuth ) {
+  }
+
+  async autenticar() {
+    await this.firebaseAuth.signInWithEmailAndPassword(this.mail, this.password)
+      .then(res => {
+        this.usuariServei.autenticat = true;
+        this.usuariServei.usuari = JSON.stringify(res.user);
+        this.usuariServei.correuAutenticat = this.mail;
+        this.correuTrobat = false;
+        for (let i = 0; i<this.usuariServei.arrayClients.clients.length;i++){
+          if(this.usuariServei.arrayClients.clients[i].Correu == this.mail){
+            this.usuariServei.posAutenticat = i;
+            this.correuTrobat = true;
+            // this.router.navigate(['/'])
+          }
+        }
+        if(!this.correuTrobat){
+          alert("Sembla que no disposem de les dades d'aquest client!");
+        }
+      })
+    if (!this.usuariServei.autenticat) {
+      alert("Correu i/o contrasenya incorrectes!");
+    }
+  }
 
 
-constructor(private http: HttpClient) {
-
-  this.http.get<any>("http://localhost:3080/api/iniciar-sessio").forEach((client) =>
-    console.log(client)
-  )
 }
-ngOnInit() {
+
+
+/*ngOnInit() {
 
 
   let idLogin = document.getElementById("login")
@@ -50,5 +82,5 @@ ngOnInit() {
     alert("Sessió tancada")
   }
 
-}
-}
+}*/
+

@@ -15,7 +15,7 @@ app.listen(port,()=>{
 })
 
 app.get('/api/iniciar-sessio', (req,res)=>{
-var serviceAccount = require("./usuari-firebase-pbotiga-firebase-adminsdk-o5ll7-e4e3cb3af7.json");
+var serviceAccount = require("../../untitled5/src/usuari-firebase-pbotiga-firebase-adminsdk-o5ll7-e4e3cb3af7.json");
 var admin = require("firebase-admin");
 const {getFirestore} = require("firebase-admin/firestore");
 
