@@ -1,22 +1,26 @@
 export interface producte {
   qty: any;
   name: string;
+  img:string;
   preu: number;
   quantitat: number;
 }
 
 export const items =[
   {
+    img:"assets/imatges/fotos%20cavas/cava%20dos.png",
     name: "Cava codorniu brut",
     preu: 7.95,
     quantitat: 1,
 },
   {
+    img: "assets/imatges/fotos%20cavas/cava%20tres.png",
     name: "Cava Marfil brut nature",
     preu: 8.15,
     quantitat: 1,
   },
   {
+    img: "assets/imatges/fotos%20licors/gin/gin%20u.png",
     name: "Cava Mistinguett brut reserva",
     preu: 14.25,
     quantitat: 1,
