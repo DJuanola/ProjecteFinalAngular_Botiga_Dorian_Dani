@@ -1,24 +1,24 @@
 
 <aside>
-  <form class="form-register">
+  <form (submit)="registrar()"  class="form-register">
     <h1>Registra't a la nostra botiga de licors</h1>
     <label for="username">Nom d'usuari: </label>
-    <input class="controls" type="text" name="nom" id="username" placeholder="" required>
+    <input [(ngModel)]="nom"  [ngModelOptions]="{standalone: true}"   class="controls" type="text" name="nom" id="username" placeholder="" required >
     <br>
     <label for="cognoms">Nom i cognoms: </label>
-    <input class="controls" type="text" name="cognoms" id="cognoms" placeholder="" required>
+    <input [(ngModel)]="cognoms"  [ngModelOptions]="{standalone: true}" class="controls" type="text" name="cognoms" id="cognoms" placeholder="" required>
     <br>
     <label for="telèfon">Telèfon de contacte: </label>
-    <input class="controls" type="tel" name="telèfon" id="telèfon" placeholder="" required>
+    <input [(ngModel)]="telefon"  [ngModelOptions]="{standalone: true}" class="controls" type="tel" name="telèfon" id="telèfon" placeholder="" required>
     <br>
     <label for="correu">Correu electrònic: </label>
-    <input class="controls" type="email" name="correu" id="correu" placeholder="" required>
+    <input [(ngModel)]="correu"  [ngModelOptions]="{standalone: true}"class="controls" type="email" name="correu" id="correu" placeholder="" required>
     <br>
     <label for="contrasenya">Contrasenya: </label>
-    <input class="controls" type="password" name="contrasenya" id="contrasenya" placeholder="" required>
+    <input [(ngModel)]="contrasenya"  [ngModelOptions]="{standalone: true}" class="controls" type="password" name="contrasenya" id="contrasenya" placeholder="" required>
     <br>
     Data de naixement:
-    <select name="Dia" id="dia">
+    <select [(ngModel)]="dia_naixement"  [ngModelOptions]="{standalone: true}" name="Dia" id="dia">
       <option value="">Dia</option>
       <option value="1">1</option>
       <option value="2">2</option>
@@ -52,7 +52,7 @@
       <option value="30">30</option>
       <option value="31">31</option>
     </select>
-    <select name="Mes" id="mes">
+    <select [(ngModel)]="mes_naixement"  [ngModelOptions]="{standalone: true}"  name="Mes" id="mes">
       <option value=""> Mes</option>
       <option value="1">1</option>
       <option value="2">2</option>
@@ -67,7 +67,7 @@
       <option value="11">11</option>
       <option value="12">12</option>
     </select>
-    <select name="Any" id="any">
+    <select [(ngModel)]="any_naixement"  [ngModelOptions]="{standalone: true}" name="Any" id="any">
       <option value=""> Any</option>
       <option value="2009">2009</option>
       <option value="2008">2008</option>
@@ -89,7 +89,7 @@
     </select>
     <br>
     <br>
-    <label for="dirrecio">Direcció: </label>
+    <label [(ngModel)]="direccio"  [ngModelOptions]="{standalone: true}" for="dirrecio">Direcció: </label>
     <input class="controls" type="text" name="direccio" id="dirrecio" placeholder="" required>
     <br>
     <br>

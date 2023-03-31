@@ -1,11 +1,11 @@
 <article>
   <form class="form-login">
     <h1>Inicia sessió</h1>
-    <label for="nom">Nom d'usuari: </label>
-    <input class="controls" type="text" name="nom" id="nom" placeholder="" required>
+    <label for="email">Correu: </label>
+    <input [(ngModel)]="mail"  [ngModelOptions]="{standalone: true}"  class="controls" type="text" name="nom" id="email" placeholder="" required>
     <br>
     <label for="password">Contrasenya: </label>
-    <input class="controls" type="password" name="contrasenya" id="password" placeholder="" required>
+    <input [(ngModel)]="password"  [ngModelOptions]="{standalone: true}" class="controls" type="password" name="contrasenya" id="password" placeholder="" required>
     <br>
   </form>
   <br>

@@ -1,0 +1,216 @@
+[debug] [2023-02-28T12:15:55.005Z] ----------------------------------------------------------------------
+[debug] [2023-02-28T12:15:55.010Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ddiaz\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-02-28T12:15:55.011Z] CLI Version:   11.24.0
+[debug] [2023-02-28T12:15:55.012Z] Platform:      win32
+[debug] [2023-02-28T12:15:55.012Z] Node Version:  v18.12.1
+[debug] [2023-02-28T12:15:55.014Z] Time:          Tue Feb 28 2023 13:15:55 GMT+0100 (hora estándar de Europa central)
+[debug] [2023-02-28T12:15:55.014Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-28T12:15:55.167Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-28T12:15:55.168Z] > authorizing via signed-in user (champofwhine@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ddiaz\WebstormProjects\ProjecteFinalAngular_Botiga_Dorian_Dani
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-02-28T12:16:17.935Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-02-28T12:16:18.584Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-02-28T12:16:18.584Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project usuari-firebase-pbotiga (usuari-firebase-pbotiga) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-02-28T12:16:21.007Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-02-28T12:16:21.008Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/usuari-firebase-pbotiga
+[debug] [2023-02-28T12:16:22.043Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/firebasedatabase.googleapis.com 200
+[debug] [2023-02-28T12:16:22.044Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2023-02-28T12:16:22.047Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2023-02-28T12:16:22.047Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/usuari-firebase-pbotiga
+[debug] [2023-02-28T12:16:23.476Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2023-02-28T12:16:23.476Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2023-02-28T12:16:33.493Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-02-28T12:16:33.494Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/usuari-firebase-pbotiga
+[debug] [2023-02-28T12:16:34.330Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/firebasedatabase.googleapis.com 200
+[debug] [2023-02-28T12:16:34.330Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-02-28T12:16:34.343Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/usuari-firebase-pbotiga [none]
+[debug] [2023-02-28T12:16:34.707Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/usuari-firebase-pbotiga 200
+[debug] [2023-02-28T12:16:34.707Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/usuari-firebase-pbotiga {"projectId":"usuari-firebase-pbotiga","projectNumber":"514368921237","displayName":"usuari-firebase-pbotiga","name":"projects/usuari-firebase-pbotiga","resources":{"hostingSite":"usuari-firebase-pbotiga"},"state":"ACTIVE","etag":"1_663ef507-ade8-4848-aaeb-a0d3d56875d9"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[info] +  Default rules have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2023-02-28T12:16:49.535Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/firestore.googleapis.com [none]
+[debug] [2023-02-28T12:16:49.536Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/firestore.googleapis.com x-goog-quota-user=projects/usuari-firebase-pbotiga
+[debug] [2023-02-28T12:16:50.405Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/firestore.googleapis.com 200
+[debug] [2023-02-28T12:16:50.406Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/firestore.googleapis.com [omitted]
+[debug] [2023-02-28T12:16:50.406Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/usuari-firebase-pbotiga/databases/(default) [none]
+[debug] [2023-02-28T12:16:50.809Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/usuari-firebase-pbotiga/databases/(default) 200
+[debug] [2023-02-28T12:16:50.810Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/usuari-firebase-pbotiga/databases/(default) {"name":"projects/usuari-firebase-pbotiga/databases/(default)","uid":"11f7994b-9c0f-4641-948f-26ab42169199","createTime":"2023-02-23T08:16:09.830006Z","updateTime":"2023-02-23T08:16:09.830006Z","locationId":"eur3","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","appEngineIntegrationMode":"DISABLED","keyPrefix":"e","etag":"IMz3iZCZuP0CMKrk6+Oaq/0C"}
+[debug] [2023-02-28T12:16:50.810Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-02-28T12:16:50.810Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-28T12:16:50.810Z] > authorizing via signed-in user (champofwhine@gmail.com)
+[debug] [2023-02-28T12:16:50.811Z] [iam] checking project usuari-firebase-pbotiga for permissions ["firebase.projects.get"]
+[debug] [2023-02-28T12:16:50.811Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/usuari-firebase-pbotiga:testIamPermissions [none]
+[debug] [2023-02-28T12:16:50.811Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/usuari-firebase-pbotiga:testIamPermissions x-goog-quota-user=projects/usuari-firebase-pbotiga
+[debug] [2023-02-28T12:16:50.811Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/usuari-firebase-pbotiga:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-02-28T12:16:51.648Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/usuari-firebase-pbotiga:testIamPermissions 200
+[debug] [2023-02-28T12:16:51.648Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/usuari-firebase-pbotiga:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-02-28T12:16:57.833Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/usuari-firebase-pbotiga/releases pageSize=10&pageToken=
+[debug] [2023-02-28T12:16:59.128Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/usuari-firebase-pbotiga/releases 200
+[debug] [2023-02-28T12:16:59.128Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/usuari-firebase-pbotiga/releases {"releases":[{"name":"projects/usuari-firebase-pbotiga/releases/cloud.firestore","rulesetName":"projects/usuari-firebase-pbotiga/rulesets/ce82b977-5014-4763-8c6f-e40fccfb55de","createTime":"2023-02-23T08:16:12.693385Z","updateTime":"2023-02-24T09:52:10.172423Z"}]}
+[debug] [2023-02-28T12:16:59.129Z] Found ruleset: projects/usuari-firebase-pbotiga/rulesets/ce82b977-5014-4763-8c6f-e40fccfb55de
+[debug] [2023-02-28T12:16:59.130Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/usuari-firebase-pbotiga/rulesets/ce82b977-5014-4763-8c6f-e40fccfb55de [none]
+[debug] [2023-02-28T12:16:59.873Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/usuari-firebase-pbotiga/rulesets/ce82b977-5014-4763-8c6f-e40fccfb55de 200
+[debug] [2023-02-28T12:16:59.874Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/usuari-firebase-pbotiga/rulesets/ce82b977-5014-4763-8c6f-e40fccfb55de [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-02-28T12:17:01.799Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/usuari-firebase-pbotiga/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-02-28T12:17:01.805Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/usuari-firebase-pbotiga/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-02-28T12:17:02.092Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/usuari-firebase-pbotiga/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-02-28T12:17:02.092Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/usuari-firebase-pbotiga/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2023-02-28T12:17:02.133Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/usuari-firebase-pbotiga/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-02-28T12:17:02.133Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/usuari-firebase-pbotiga/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/usuari-firebase-pbotiga/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2023-02-28T12:17:02.136Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-28T12:17:02.137Z] > authorizing via signed-in user (champofwhine@gmail.com)
+[debug] [2023-02-28T12:17:02.137Z] [iam] checking project usuari-firebase-pbotiga for permissions ["firebase.projects.get"]
+[debug] [2023-02-28T12:17:02.137Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/usuari-firebase-pbotiga:testIamPermissions [none]
+[debug] [2023-02-28T12:17:02.137Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/usuari-firebase-pbotiga:testIamPermissions x-goog-quota-user=projects/usuari-firebase-pbotiga
+[debug] [2023-02-28T12:17:02.137Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/usuari-firebase-pbotiga:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-02-28T12:17:02.798Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/usuari-firebase-pbotiga:testIamPermissions 200
+[debug] [2023-02-28T12:17:02.798Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/usuari-firebase-pbotiga:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-02-28T12:17:02.799Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-02-28T12:17:02.799Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/usuari-firebase-pbotiga
+[debug] [2023-02-28T12:17:02.803Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-02-28T12:17:02.803Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/usuari-firebase-pbotiga
+[debug] [2023-02-28T12:17:03.630Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/runtimeconfig.googleapis.com 200
+[debug] [2023-02-28T12:17:03.630Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-02-28T12:17:03.631Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/cloudfunctions.googleapis.com 200
+[debug] [2023-02-28T12:17:03.631Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2023-02-28T12:17:03.632Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2023-02-28T12:17:03.632Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/usuari-firebase-pbotiga
+[debug] [2023-02-28T12:17:04.959Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2023-02-28T12:17:04.960Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2023-02-28T12:17:14.969Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-02-28T12:17:14.970Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/usuari-firebase-pbotiga
+[debug] [2023-02-28T12:17:15.795Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/cloudfunctions.googleapis.com 200
+[debug] [2023-02-28T12:17:15.795Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/usuari-firebase-pbotiga/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/tsconfig.json 
+[info] +  Wrote functions/tsconfig.dev.json 
+[info] +  Wrote functions/src/index.ts 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote public/404.html 
+[debug] [2023-02-28T12:19:35.954Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-02-28T12:19:36.095Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-02-28T12:19:36.096Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.17.1","browserURL":"https://www.gstatic.com/firebasejs/9.17.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.17.1/firebase.tgz"},"live":{"version":"9.17","browserURL":"https://www.gstatic.com/firebasejs/live/9.17/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.17/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.17.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.17.1/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.17.1/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.17.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.17.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.17.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.17.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.17.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.17.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.17.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\ddiaz\WebstormProjects\ProjecteFinalAngular_Botiga_Dorian_Dani 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=1009906080&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-02-28T12:20:03.972Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-02-28T12:20:03.973Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-02-28T12:20:04.390Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-02-28T12:20:04.390Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-02-28T12:20:04.410Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-02-28T12:20:04.933Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-02-28T12:20:04.933Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"DiazDani","id":115063732,"node_id":"U_kgDOBtu7tA","avatar_url":"https://avatars.githubusercontent.com/u/115063732?v=4","gravatar_id":"","url":"https://api.github.com/users/DiazDani","html_url":"https://github.com/DiazDani","followers_url":"https://api.github.com/users/DiazDani/followers","following_url":"https://api.github.com/users/DiazDani/following{/other_user}","gists_url":"https://api.github.com/users/DiazDani/gists{/gist_id}","starred_url":"https://api.github.com/users/DiazDani/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/DiazDani/subscriptions","organizations_url":"https://api.github.com/users/DiazDani/orgs","repos_url":"https://api.github.com/users/DiazDani/repos","events_url":"https://api.github.com/users/DiazDani/events{/privacy}","received_events_url":"https://api.github.com/users/DiazDani/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":1,"public_gists":0,"followers":0,"following":0,"created_at":"2022-10-05T06:18:53Z","updated_at":"2023-02-16T08:39:36Z","private_gists":0,"total_private_repos":2,"owned_private_repos":2,"disk_usage":142,"collaborators":1,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as DiazDani 
+[info] 
+[debug] [2023-02-28T12:20:16.623Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-02-28T12:20:17.785Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-02-28T12:20:17.785Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-02-28T12:20:40.771Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-02-28T12:20:41.063Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-02-28T12:20:41.064Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-02-28T12:20:41.331Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-02-28T12:20:41.504Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-02-28T12:20:41.610Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-02-28T12:20:41.611Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-02-28T12:20:41.675Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-02-28T12:20:41.790Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-02-28T12:20:41.790Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-02-28T12:20:41.826Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-02-28T12:20:41.962Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-02-28T12:20:41.962Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-02-28T12:20:41.993Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-02-28T12:20:42.109Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-02-28T12:20:42.109Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-02-28T12:20:42.142Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-02-28T12:20:42.259Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-02-28T12:20:42.259Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-02-28T12:20:42.303Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-02-28T12:20:42.417Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-02-28T12:20:42.418Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-02-28T12:20:42.464Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-02-28T12:20:42.586Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-02-28T12:20:42.586Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-02-28T12:20:42.762Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-02-28T12:20:42.763Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-02-28T12:20:43.719Z] >>> [apiv2][query] GET https://api.github.com/repos/ /actions/secrets/public-key type=owner
+[debug] [2023-02-28T12:20:43.880Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-02-28T12:20:43.999Z] <<< [apiv2][status] GET https://api.github.com/repos/ /actions/secrets/public-key 404
+[debug] [2023-02-28T12:20:44.000Z] <<< [apiv2][body] GET https://api.github.com/repos/ /actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-02-28T12:20:44.037Z] >>> [apiv2][query] GET https://api.github.com/repos/ /actions/secrets/public-key type=owner
+[debug] [2023-02-28T12:20:44.208Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-02-28T12:20:44.208Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-02-28T12:20:44.314Z] <<< [apiv2][status] GET https://api.github.com/repos/ /actions/secrets/public-key 404
+[debug] [2023-02-28T12:20:44.315Z] <<< [apiv2][body] GET https://api.github.com/repos/ /actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
